@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genomic Epidemiology Hub</title>
+    <title>Structured Page</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         nav {
-            background-color: #004d99;
+            background-color: #01B1D3;
             color: white;
             padding: 15px;
             position: fixed;
             top: 0;
             width: 100%;
             text-align: center;
+            font-weight: bold;
         }
         nav a {
             color: white;
@@ -26,62 +29,46 @@
             margin: 0 15px;
             font-size: 16px;
         }
-        main {
+        .container {
             margin-top: 70px;
             padding: 20px;
         }
-        section {
+        .white-box {
             background: white;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 5px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            color: #055A5E;
         }
-        footer {
-            background-color: #004d99;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .light-box {
+            background: #DCE7E8;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#resources">Genomic Resources</a>
-        <a href="#tools">Analysis Tools</a>
-        <a href="#capacity">Capacity Building</a>
-        <a href="#contact">Contact Us</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </nav>
 
-    <main>
-        <section id="resources">
-            <h2>Genomic Resources</h2>
-            <p>Explore comprehensive genomic datasets and epidemiological insights to enhance infectious disease tracking.</p>
-        </section>
+    <div class="container">
+        <div class="white-box">
+            <h2>Welcome to Your Page</h2>
+            <p>This is a placeholder text section with a white background, using the Raleway font and text color #055A5E.</p>
+        </div>
 
-        <section id="tools">
-            <h2>Analysis Tools</h2>
-            <p>Access computational tools for genomic epidemiology, including sequence alignment and pathogen tracking utilities.</p>
-        </section>
-
-        <section id="capacity">
-            <h2>Capacity Building</h2>
-            <p>Learn about initiatives aimed at strengthening data-sharing infrastructure and promoting genomic surveillance.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For inquiries, collaborations, or data contributions, please reach out to our team.</p>
-        </section>
-    </main>
-
-    <footer>
-        © 2025 Genomic Epidemiology Hub | All rights reserved
-    </footer>
+        <div class="light-box">
+            <h2>Additional Information</h2>
+            <p>This is another placeholder text section with a light background color #DCE7E8.</p>
+        </div>
+    </div>
 
 </body>
 </html>
