@@ -90,37 +90,16 @@ p {
     padding: 2rem;
 }
 
-.bottom-container outer {
+.bottom-container .outer {
     margin-left: 5%;
 }
 
-.bottom-container inner {
+.bottom-container .inner {
     margin-left: 7.5%;
 }
 
-.table-style {
+.table {
     display: flex;
     flex-direction: column;
     margin-left: 1rem; /* Slight indentation */
-}
-
-.table-style .row {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
-}
-
-.table-style .image-column img {
-    width: 40px;
-    height: 40px;
-}
-
-.table-style .text-column a {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #000;
-}
-
-.table-style .description-column {
-    font-size: 1rem;
 }
