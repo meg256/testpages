@@ -1,4 +1,3 @@
-/* Main display styles, incl nav bar and footer */
 body {
  margin: 0;
  font-family: 'Lato', sans-serif;
@@ -31,7 +30,7 @@ nav a:hover {
 
 nav a.active {
  text-decoration: underline;
- color: #033c3f; 
+ color: #033C3F; 
 }
 
 footer {
@@ -51,7 +50,6 @@ footer a:hover {
  text-decoration: underline;
 }
 
-/* Global text styles */
 h2 {
  font-family: 'Raleway', sans-serif;
  color: #055A5E;
@@ -66,7 +64,6 @@ p {
  margin: 0;
 }
 
-/* Content container styles */
 .top-container {
  display: flex;
  justify-content: space-between;
