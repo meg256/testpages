@@ -89,3 +89,30 @@ p {
     background-color: #DCE7E8;
     padding: 2rem;
 }
+
+.table-style {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem; /* Slight indentation */
+}
+
+.table-style .row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.table-style .image-column img {
+    width: 40px;
+    height: 40px;
+}
+
+.table-style .text-column a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+}
+
+.table-style .description-column {
+    font-size: 1rem;
+}

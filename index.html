@@ -17,8 +17,10 @@
   
 <body>
   <nav>
-    <a onclick="loadContent('main.html')">Home</a>
-    <a onclick="loadContent('about.html')">About</a>
+    <a onclick="loadContent('about.html')">Home</a>
+    <a onclick="loadContent('protocols.html')">Sequencing Protocols</a>
+    <a onclick="loadContent('workflows.html')">Bioinformatics Workflows</a>
+    <a onclick="loadContent('response.html')">Response and Readiness</a>
   </nav>
 
   <div id="content"></div>
@@ -51,7 +53,7 @@
     }
 
     // Load default content
-    window.onload = () => loadContent('main.html');
+    window.onload = () => loadContent('about.html');
   </script>
     
 </body>
