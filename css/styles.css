@@ -1,3 +1,42 @@
+/* Main display styles, incl nav bar and footer */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+nav {
+  background-color: #01B1D3;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  color: #055A5E;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+nav a {
+  color: #055A5E;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #027B84;
+}
+nav a.active {
+  text-decoration: underline;
+  color: #033c3f; 
+}
+footer {
+  background-color: #01B1D3; 
+  color: #055A5E; 
+  text-align: center; 
+  padding: 1rem; 
+  font-family: 'Raleway', sans-serif;"
+}
+
 /* Global text styles */
 h2 {
   font-family: 'Raleway', sans-serif;
