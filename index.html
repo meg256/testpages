@@ -1,100 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structured Page</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Lato:wght@300;400;700&display=swap');
-
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        nav {
-            background-color: #01B1D3;
-            color: white;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-left {
-            font-size: 18px;
-            font-weight: bold;
-            font-family: 'Raleway', sans-serif;
-            padding-left: 20px;
-        }
-        .nav-right {
-            display: flex;
-            gap: 15px;
-            padding-right: 20px;
-        }
-        .nav-right a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .container {
-            margin-top: 50px;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .white-box, .light-box {
-            padding: 40px;
-            margin: 0;
-            border-radius: 0;
-        }
-        .white-box {
-            background: white;
-        }
-        .light-box {
-            background: #DCE7E8;
-        }
-        h2 {
-            font-family: 'Raleway', sans-serif;
-            color: #055A5E;
-        }
-        p {
-            font-family: 'Lato', sans-serif;
-            color: black;
-        }
-        iframe {
-            width: 100%;
-            height: 90vh;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Splash template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+    nav {
+      background-color: #01B1D3;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      color: #055A5E;
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #055A5E;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 60px); /* Adjust based on nav height */
+      border: none;
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <nav>
-        <div class="nav-left">NAVIGATION</div>
-        <div class="nav-right">
-            <a href="index.html" target="contentFrame">Home</a>
-            <a href="about.html" target="contentFrame">About</a>
-            <a href="services.html" target="contentFrame">Services</a>
-            <a href="contact.html" target="contentFrame">Contact</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="white-box">
-            <h2>Welcome to Your Page</h2>
-            <p>This is a placeholder text section with a white background. The header uses Raleway in #055A5E, and the body text is black in Lato.</p>
-        </div>
-
-        <div class="light-box">
-            <h2>Additional Information</h2>
-            <p>This section has a light background color #DCE7E8, with headers in Raleway and body text in Lato.</p>
-        </div>
-    </div>
-
+  <iframe src="main.html"></iframe>
 </body>
 </html>
