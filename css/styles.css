@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  /* line-height: 1.6; */
+  line-height: 1.6;
 }
 
 nav {
@@ -10,7 +10,6 @@ nav {
    padding: 1rem 2rem;
    position: sticky;
    top: 0;
-   /* z-index: 1000; */
    color: #055A5E;
    font-family: 'Raleway', sans-serif;
    display: flex;
@@ -23,7 +22,6 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  */ padding: 0.75rem 1rem; Better tap target */
   transition: color 0.2s ease;
 }
 
@@ -35,7 +33,7 @@ nav a.active {
 
 /* Footer */
 footer {
-  /* display: flex; maybe add justify-content: center; centers content for small screens */
+  display: flex;
   background-color: #01B1D3;
   text-align: center;
   padding: 1rem;
@@ -56,8 +54,7 @@ h2 {
   color: #055A5E;
   text-align: left;
   margin: 0 0 1rem 0; 
-  /* margin-bottom: 1rem */
-  /* font-size: clamp(1.5rem, 4vw, 2rem); Responsive font */
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 p {
@@ -65,14 +62,14 @@ p {
   color: black;
   text-align: left;
   margin: 0;
-  /* font-size: clamp(1rem, 3vw, 1.25rem); */
+  font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
 /* Content container styles */
 .top-container {
-  display: flex; /* wrap recommended as it allows better adaptability */
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* center recommended for mobile */
+  align-items: flex-start;
   background-color: white;
   padding: 2rem;
 }
@@ -83,8 +80,8 @@ p {
 }
 
 .top-container img {
-  width: 20vw; /* 20% recommended for responsive image sizing? 20vw = 1/5th of viewport */
-  max-width: 800px; /* Prevents oversized images */
+  width: 20vw;
+  max-width: 800px;
   height: auto;
 }
 
