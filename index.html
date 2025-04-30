@@ -40,8 +40,32 @@
             text-decoration: none;
             font-size: 16px;
         }
-        #content {
-            margin-top: 70px;
+        .container {
+            margin-top: 50px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .white-box, .light-box {
+            padding: 40px;
+            margin: 0;
+            border-radius: 0;
+        }
+        .white-box {
+            background: white;
+        }
+        .light-box {
+            background: #DCE7E8;
+        }
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            color: #055A5E;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            color: black;
+        }
+        iframe {
             width: 100%;
             height: 90vh;
             border: none;
@@ -53,14 +77,24 @@
     <nav>
         <div class="nav-left">NAVIGATION</div>
         <div class="nav-right">
-            <a href="home.html" target="contentFrame">Home</a>
+            <a href="index.html" target="contentFrame">Home</a>
             <a href="about.html" target="contentFrame">About</a>
             <a href="services.html" target="contentFrame">Services</a>
             <a href="contact.html" target="contentFrame">Contact</a>
         </div>
     </nav>
 
-    <iframe id="content" name="contentFrame" src="home.html"></iframe>
+    <div class="container">
+        <div class="white-box">
+            <h2>Welcome to Your Page</h2>
+            <p>This is a placeholder text section with a white background. The header uses Raleway in #055A5E, and the body text is black in Lato.</p>
+        </div>
+
+        <div class="light-box">
+            <h2>Additional Information</h2>
+            <p>This section has a light background color #DCE7E8, with headers in Raleway and body text in Lato.</p>
+        </div>
+    </div>
 
 </body>
 </html>
