@@ -8,13 +8,13 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Note: center provides better alignment for smaller screens than flex-end */
+  justify-content: flex-end; /* Note: center provides better alignment for smaller screens than flex-end */
   background-color: #01B1D3;
   padding: 1rem; /* previously 1rem 2rem */
   position: sticky;
   top: 0;
   z-index: 1000;
-  gap: 1rem; /* previously 1rem */
+  gap: 1rem; /* previously 2rem */
 }
 
 nav a {
@@ -56,7 +56,7 @@ h2 {
   font-family: 'Raleway', sans-serif;
   color: #055A5E;
   text-align: left;
-  margin-bottom: 1rem; /* margin: 0 0 1rem 0; */
+  margin: 0 0 1rem 0; /* margin-bottom: 1rem */
   font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font */
 }
 
