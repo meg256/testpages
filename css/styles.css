@@ -57,6 +57,13 @@ h2 {
     margin: 0 0 1rem 0;
 }
 
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #055A5E;
+    text-align: left;
+    margin: 0 0 1rem 0;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     color: black;
