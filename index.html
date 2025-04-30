@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structured Page</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Lato:wght@300;400;700&display=swap');
 
         body {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -20,13 +20,24 @@
             position: fixed;
             top: 0;
             width: 100%;
-            text-align: center;
-            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav a {
+        .nav-left {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            padding-left: 20px;
+        }
+        .nav-right {
+            display: flex;
+            gap: 15px;
+            padding-right: 20px;
+        }
+        .nav-right a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
             font-size: 16px;
         }
         .container {
@@ -39,7 +50,6 @@
             margin-bottom: 20px;
             border-radius: 5px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            color: #055A5E;
         }
         .light-box {
             background: #DCE7E8;
@@ -47,28 +57,25 @@
             border-radius: 5px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            color: #055A5E;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            color: black;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <div class="nav-left">NAVIGATION</div>
+        <div class="nav-right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
     </nav>
 
-    <div class="container">
-        <div class="white-box">
-            <h2>Welcome to Your Page</h2>
-            <p>This is a placeholder text section with a white background, using the Raleway font and text color #055A5E.</p>
-        </div>
-
-        <div class="light-box">
-            <h2>Additional Information</h2>
-            <p>This is another placeholder text section with a light background color #DCE7E8.</p>
-        </div>
-    </div>
-
-</body>
-</html>
