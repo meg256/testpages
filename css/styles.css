@@ -6,15 +6,17 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end; /* Note: center provides better alignment for smaller screens than flex-end */
-  background-color: #01B1D3;
-  padding: 1rem; /* previously 1rem 2rem */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  gap: 1rem; /* previously 2rem */
-}
+   background-color: #01B1D3;
+   padding: 1rem 2rem;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   color: #055A5E;
+   font-family: 'Raleway', sans-serif;
+   display: flex;
+   justify-content: flex-end;
+   gap: 2rem;
+ }
 
 nav a {
   color: #055A5E;
@@ -33,8 +35,7 @@ nav a.active {
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: center; /* Centered for small screens */
+  display: flex; /* maybe add justify-content: center; centers content for small screens */
   background-color: #01B1D3;
   text-align: center;
   padding: 1rem;
@@ -81,7 +82,7 @@ p {
 }
 
 .top-container img {
-  width: 20%; /* Recommended for responsive image sizing? previously 20vw aka 1/5th of viewport */
+  width: 20vw; /* 20% recommended for responsive image sizing? 20vw = 1/5th of viewport */
   max-width: 250px; /* Prevents oversized images */
   height: auto;
 }
