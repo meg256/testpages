@@ -98,11 +98,11 @@ p {
 }
 
 .bottom-container .outer {
-    margin-left: 5%;
+    margin-left: 1rem; /* Slight indentation at 1rem, formerly 5% then 2.5% - 1rem = 1 relative to text size, % is relative to nearest block container's width */
 }
 
 .bottom-container .inner {
-    margin-left: 7.5%;
+    margin-left: 2rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
 }
 
 .table {
