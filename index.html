@@ -28,6 +28,15 @@
       color: #055A5E;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #027B84;
+    }
+    nav a.active {
+      text-decoration: underline;
+      color: #033c3f; 
     }
     #content {
       padding: 0;
@@ -54,6 +63,16 @@
         .then(response => response.text())
         .then(html => {
           document.getElementById('content').innerHTML = html;
+    
+          // Highlight active link
+          const links = document.querySelectorAll('nav a');
+          links.forEach(link => link.classList.remove('active'));
+    
+          // Add "active" class to the clicked link
+          const activeLink = Array.from(links).find(link => link.getAttribute('onclick')?.includes(page));
+          if (activeLink) {
+            activeLink.classList.add('active');
+          }
         })
         .catch(err => {
           document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
