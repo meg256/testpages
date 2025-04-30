@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+
 nav {
   background-color: #01B1D3;
   padding: 1rem 2rem;
@@ -14,6 +15,7 @@ nav {
   justify-content: flex-end;
   gap: 2rem;
 }
+
 nav a {
   color: #055A5E;
   text-decoration: none;
@@ -21,20 +23,28 @@ nav a {
   cursor: pointer;
   transition: color 0.2s ease;
 }
+
 nav a:hover {
   text-decoration: underline;
   color: #027B84;
 }
+
 nav a.active {
   text-decoration: underline;
   color: #033c3f; 
 }
+
 footer {
   background-color: #01B1D3; 
   color: #055A5E; 
   text-align: center; 
   padding: 1rem; 
   font-family: 'Raleway', sans-serif;"
+}
+
+footer a {
+  color: #055A5E;
+  text-decoration: underline;
 }
 
 /* Global text styles */
@@ -52,7 +62,7 @@ p {
   margin: 0;
 }
 
-/* Container styles */
+/* Content container styles */
 .top-container {
   display: flex;
   justify-content: space-between;
