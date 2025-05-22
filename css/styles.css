@@ -106,8 +106,20 @@ p {
 }
 
 .table {
-    display: flex;
-    width: 60%;
     border-collapse: collapse;
-
-}
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  tr {
+    display: flex;
+  }
+  
+  td, th {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
