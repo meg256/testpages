@@ -107,7 +107,6 @@ p {
 }
 
 .table {
-    width: 50%;
-    flex-direction: column;
+    display: flex;
     margin-left: 1rem; /* Slight indentation */
 }
