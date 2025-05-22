@@ -108,4 +108,6 @@ p {
 
 .table {
     margin-left: 2rem; /* Slight indentation */
+    display: flex;
+    flex-direction: column;
 }
