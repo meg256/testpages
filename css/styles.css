@@ -106,9 +106,9 @@ p {
     margin-left: 5rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
 }
 
-.table {
+table {
     display: flex;
     flex-direction: column;
     border-collapse: separate;
-    margin-left: 1rem; /* Slight indentation */
+    padding: 1rem;
 }
