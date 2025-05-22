@@ -107,7 +107,6 @@ p {
 }
 
 .table {
-    table-layout: fixed;
     width: 70vw;
     border-collapse: separate;
     padding: 3rem 3rem;
