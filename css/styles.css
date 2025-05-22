@@ -95,15 +95,15 @@ p {
     flex-direction: column;
     align-items: flex-start;
     background-color: #DCE7E8;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .bottom-container .outer {
-    margin-left: 2.5rem; /* Slight indentation at 1rem, formerly 5% then 2.5% - 1rem = 1 relative to text size, % is relative to nearest block container's width */
+    margin-left: 5rem; /* Slight indentation at 1rem, formerly 5% then 2.5% - 1rem = 1 relative to text size, % is relative to nearest block container's width */
 }
 
 .bottom-container .inner {
-    margin-left: 4rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
+    margin-left: 7.5rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
 }
 
 table {
