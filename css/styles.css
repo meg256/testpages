@@ -103,7 +103,7 @@ p {
 }
 
 .bottom-container .inner {
-    margin-left: 5rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
+    margin-left: 4rem; /* Slightly more indentation at 2rem, formerly 7.5% then 5% */
 }
 
 table {
