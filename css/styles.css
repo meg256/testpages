@@ -109,10 +109,7 @@ p {
 .table {
     table-layout: fixed;
     width: 70vw;
+    border-collapse: separate;
     border-spacing: 2rem 0.3rem;
-  }
-
-th, td {
-    padding: 0.5rem; /* Adjust the value as needed */
   }
   
