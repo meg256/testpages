@@ -109,5 +109,5 @@ p {
 .table {
     width: 70vw;
     border-collapse: separate;
-    padding: 3rem 3rem;
+    border-spacing: 1rem;
   }
