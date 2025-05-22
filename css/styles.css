@@ -109,6 +109,7 @@ p {
 .table {
     table-layout: fixed;
     width: 70vw;
+    border-spacing: 2rem 0.3rem;
   }
 
 th, td {
