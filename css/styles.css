@@ -109,10 +109,6 @@ p {
 .table {
     table-layout: fixed;
     width: 70vw;
-    padding: 3rem 0;
-  }
-  
-.td {
     border-collapse: separate;
-    padding: 1rem; /* Adjust as needed for vertical spacing */
+    padding: 3rem 3rem;
   }
