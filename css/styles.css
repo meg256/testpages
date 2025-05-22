@@ -107,8 +107,6 @@ p {
 }
 
 table {
-    display: flex;
-    flex-direction: column;
     border-collapse: separate;
     padding: 1rem;
 }
