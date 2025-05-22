@@ -108,5 +108,6 @@ p {
 
 .table {
     width: 50%;
+    table-layout: fixed;
     margin-left: 2rem; /* Slight indentation */
 }
