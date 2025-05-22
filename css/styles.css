@@ -113,5 +113,6 @@ p {
   }
   
 .td {
+    border-collapse: separate;
     padding: 1rem; /* Adjust as needed for vertical spacing */
   }
