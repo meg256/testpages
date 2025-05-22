@@ -110,4 +110,8 @@ p {
     table-layout: fixed;
     width: 60vw;
   }
+
+th, td {
+    padding: 0.5rem; /* Adjust the value as needed */
+  }
   
