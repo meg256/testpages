@@ -29,7 +29,7 @@ nav a:hover {
     color: #027B84;
 }
 
-nav a.active {
+nav a:active {
     text-decoration: underline;
     color: #033C3F; 
 }
