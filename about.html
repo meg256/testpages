@@ -12,6 +12,21 @@
       margin: 0;
       padding: 0;
     }
+
+    .rounded-box {
+      /* Defines the border style, width, and color */
+      border: 2px solid #F0F4F5;
+      /* Rounds all four corners with a 25-pixel radius */
+      border-radius: 50px;
+      background-color: #F0F4F5;
+      /* Adds some space inside the box for content */
+      padding: 1px;
+      }
+
+    figure {
+  text-align: center; /* Centers the image and figcaption */
+      }
+      
   </style>
 </head>
   
@@ -27,40 +42,45 @@
   </div>
 
   <div class="bottom-container">
+    <div id="contentBox" style="margin:auto; width=100%">
     <h2>PGCoE Sites</h2>
-      <table>
-      <tr class="row">
-        <td><img src="img/logo_square-GA.png" style="width: 6rem;"></td>
-        <td>Georgia PGCoE</td>
-        <td><a href="https://www.pgcoe-cape.org/">https://www.pgcoe-cape.org/</a></td>
-      </tr>
-      <tr class="row">
-        <td><img src="img/logo_square-MN.png" style="width: 6rem;"></td>
-        <td>Minnesota PGCoE</td>
-        <td><a href="https://www.health.state.mn.us/">https://www.health.state.mn.us/</a></td>
-      </tr>
-      <tr class="row">
-        <td><img src="img/logo_square-NE.png" style="width: 6rem;"></td>
-        <td>New England PGCoE</td>
-        <td><a href="https://www.nepgcoe.org">https://www.nepgcoe.org</a></td>
-      </tr>
-      <tr class="row">
-        <td><img src="img/logo_square-NW.png" style="width: 6rem;"></td>
-        <td>Northwest PGCoE</td>
-        <td><a href="https://nwpage.org/">https://nwpage.org/</a><br><a href="https://github.com/nw-page">https://github.com/nw-page</a></td>
-      </tr>
-      <tr class="row">
-        <td><img src="img/logo_square-VA.png" style="width: 6rem;"></td>
-        <td>Virginia PGCoE</td>
-        <td><a href="https://va-pgcoe.org/">https://va-pgcoe.org/</a></td>
-      </tr>
-    </table>
+        <div id="column1" class="rounded-box" style="float:left; margin:2px; width:16%;">
+          <figure>
+            <img src="img/logo_square-GA.png" alt="GA PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.pgcoe-cape.org/">Georgia PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column2" class="rounded-box" style="float:left; margin:2px; width:17%;">
+          <figure>
+            <img src="img/logo_square-MN.png" alt="MN PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.health.state.mn.us/">Minnesota PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column3" class="rounded-box" style="float:left; margin:2px; width:17%;">
+          <figure>
+            <img src="img/logo_square-NE.png" alt="NE PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.nepgcoe.org">New England PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column4" class="rounded-box" style="float:left; margin:2px; width:17%;">
+          <figure>
+            <img src="img/logo_square-NW.png" alt="NW PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://nwpage.org/">Northwest PGCoE </a><a href="https://github.com/nw-page">(Github)</a></figcaption>
+          </figure>
+        </div>
+        <div id="column5" class="rounded-box" style="float:left; margin:2px; width:16%;">
+          <figure>
+            <img src="img/logo_square-VA.png" alt="VA PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://va-pgcoe.org/">Virginia PGCoE</a></figcaption>
+          </figure>
+        </div>
+      </div>
 
-</div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Pathogen Genomics Centers of Excellence</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Pathogen Genomics Centers of Excellence</p>
+    </footer>
     
-</body>
+  </body>
 </html>
