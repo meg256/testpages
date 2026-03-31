@@ -28,6 +28,50 @@
       /* Adds some space inside the box for content */
       padding: 10px;
       }
+
+      button {
+  background: none; /* Removes background color/image */
+  border: none;    /* Removes the border */
+  outline: none;   /* Removes the default blue/black outline on focus/click for accessibility concerns, consider adding an alternative focus style */
+  cursor: pointer; /* Keeps the hand cursor pointer, which is good practice for buttons */
+  /* Match the H2 style */
+  font-family: 'Raleway', sans-serif;
+    color: #055A5E;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.5em; /* 2em matches default H2 size */
+    font-weight: bold;
+}
+
+.dropdown {
+  position: relative; /* Needed to position the dropdown content correctly */
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /* Makes the links take up the full width */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   </style>
 </head>
   
@@ -73,16 +117,24 @@
         <h3>virus-shotgun</h3>	
 	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://github.com/neidl-connor-lab/virus-shotgun">simple pipeline</a> for metagenomic classification (using Kraken2), assembly, and variant calling from viral sequencing data.</a></p>
       </div>
-
-      <h2>Genomic Analysis Workflows</h2>
+      <br>
+      <br>
+      <div class="dropdown">
+        <button class="dropbtn">Genomic Analysis Workflows</button>
+        <div class="dropdown-content">
+          <a href="#div_bact">Bacterial Workflows</a>
+          <a href="#div_phylo">Phylogenetic Analyses</a>
+          <a href="#div_tran">Transmission Analysis</a>
+          <a href="#div_oth">Other</a>
+        </div>
+      </div>
       <div class="outer">
-        <div id="contentBox" style="margin:1px auto; width=100%">
-          <div id="column1" class="rounded-box" style="float:left; margin:2px; width:45%;">
-            <h2>Bacterial Workflows</h2>
-
+        <div id="div_bact">
+            <h2><u>Bacterial Workflows</u></h2>
+        </div>
             <h3>BigBacter</h3>
             <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> <a href="https://nwpage.org/tool-workflow/bigbacter">BigBacter</a> is a bacterial genomic surveillance pipeline to build phylogenetic trees, SNP matrices, and summary statistics, with output generated as MicroReact files. This pipeline also enables users to keep a running archive of genomic clusters that new sequences are added to if they're genomically similar, enabling longitudinal cluster monitoring.</p>
-            
+
             <h3>camlhmp</h3>
             <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a>An <a href="https://github.com/rpetit3/camlhmp">infrastructure</a> for defining typing schemas for organisms. Current tools developed using this infrastructure include <a href="https://github.com/rpetit3/pasty?tab=readme-ov-file">pasty</a> (<em>Pseudomonas aeruginosa</em> serotyper), <a href="https://github.com/rpetit3/pbptyper">pbptyper</a> (<em>Streptococcus pneumoniae</em> penicillin binding protein typing), <a href="https://github.com/rpetit3/sccmec">sccmec</a> (Staphylcoccal chromosome cassette mec typing), and <a href="https://github.com/erinyoung/tulatyper">tulatyper</a> (<em>Francisella tularensis</em> subtyping), all of which are integrated with Bactopia.</a></p>
           
@@ -91,11 +143,10 @@
 
             <h3>Hospital Acquired Infection (HAI) Analysis</h3>
             <p><a href="https://github.com/cape-ph"></a><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a> An <a href="https://github.com/cape-ph/arlog/tree/validation">R script workflow</a> for automating data structuring, linkage, and analysis for a subset of pathogens tracked through the CDC's Antimicrobial Resistance Laboratory Network (ARLN) and Active Bacterial Core (ABC).</p>
-          </div>
-
-          <div id="column2" class="rounded-box" style="float:left; margin:2px; width:45%; border-bottom: 2px solid black;">
-            <h2>Phylogenetic Analyses</h2>
-
+        <br>
+        <div id="div_phylo">
+            <h2><u>Phylogenetic Analyses</u></h2>
+        </div>
             <h3>Tip Trait Association Testing (TTAT)</h3>
             <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a>A <a href="https://github.com/leke-lyu/TTAT"> statistical framework</a> for testing if more closely related taxa on a phylogenetic tree are more likely to share the same trait values than we'd expect just by chance, allowing one to test for association between tree tips and chosen characteristics. There are also <a href="https://github.com/leke-lyu/jointEstimation">features</a> to analyze subregion heterogeneity of viral transmission and track when, where, and how many case introductions occur.</a></p>
 
@@ -107,14 +158,10 @@
 
             <h3>Delphy</h3>
             <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://delphy.fathom.info/">fast, scalable, accurate, and accessible tool</a> for Bayesian phylogenetics with a drag-and-drop interface that requires no local installation or coding.</a></p>
-          </div>  
+        <br>
+        <div id="div_tran">
+            <h2><u>Transmission Analysis</u></h2>
         </div>
-      </div>
-
-      <div class="outer">
-        <div id="contentBox" style="margin:1px auto; width=100%">
-          <div id="column3" class="rounded-box" style="float:left; margin:2px; width:45%;">
-            <h2>Transmission Analysis</h2>
             <h3>JUNIPER</h3>
             <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://github.com/broadinstitute/juniper-analyses">framework</a> for predicting both phylogenies and transmission networks for viral outbreaks, accounting for both within-host variability and incomplete data.</a></p>
         
@@ -126,10 +173,10 @@
           
             <h3>Spatial Transmission Count Statistic</h3>
             <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> <a href="https://zenodo.org/records/15110638">Code</a> that provides an efficient means to summarize the geographic transmission patterns imprinted in viral phylogenies, categorizing case linkages as imports, local transmissions, and exports.</p>
-          </div>
-
-          <div id="column4" class="rounded-box" style="float:left; margin:2px; width:45%;">
-            <h2>Other</h2>  
+        <br>
+        <div id="div_oth">
+            <h2><u>Other</u></h2> 
+        </div> 
             <h3>Subsamplerr</h3>
             <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> An <a href="https://zenodo.org/records/15110640">R package</a> that processes case count tables and genome metadata to enable a visual exploration of sampling heterogeneity and the implementation of proportional sampling schemes.</p>
 
@@ -138,8 +185,12 @@
 
             <h3>Metagenomic Analysis Pipeline</h3>
             <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> A <a href="https://github.com/briannajeanne/metagen/tree/main">pathogen agnostic pipeline</a> to perform a series of metagenomic bioinformatics analyses, including read filtering, taxonomic classification, and BLAST searches.</p>
-          </div>
-        </div>
+      
+            <h3>SNPer</h3>
+            <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> A <a href="https://github.com/mccronelab/SNPer">Nextflow-based pipeline</a> for calling within-host variants from standard sequencing read data.</p>
+
+            <h3>racoon</h3>
+            <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> A <a href="https://github.com/NW-PaGe/wadoh_raccoon">Python package</a> for transforming and linking pathogen sequencing and subtyping data.</p>
       </div>
     </div>
 
