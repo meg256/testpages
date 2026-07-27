@@ -120,12 +120,10 @@ table {
 a.button {
       background-color: #B3DADE;
       box-shadow: 0 2px 4px darkslategray;
+      min-width: 140px;
       border: none;
-      padding: .75rem 1.25rem;
-      font-size: 22px;
-      height: 65px;
-      width: 380px;
-      border-radius: 10rem;
+      padding: .33rem 0.33rem 0rem 0.33rem;
+      font-size: 20px;
       transition: .3s;
       position: relative;
       cursor: pointer;
@@ -139,6 +137,7 @@ a.button {
       justify-content: center;
       text-align: center;
       text-decoration: none;
+      color: #D81B1B;
 
       &:after {
         content: '';
@@ -148,7 +147,6 @@ a.button {
         width: 100%;
         height: 100%;
         background-color: #B3DADE;
-        border-radius: 10rem;
         z-index: -2;
     }
   
@@ -161,13 +159,12 @@ a.button {
         height: 100%;
         background-color: #043C3F;
         transition: all .3s;
-        border-radius: 10rem;
         z-index: -1;
-        color: #FFF;
+        color: #FFD1D1;
     }
 
       &:hover {
-        color: #FFF;
+        color: #FFD1D1;
             &:before {
                 width: 100%;
             }
