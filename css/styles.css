@@ -118,28 +118,27 @@ table {
 }
 
 a.button {
-      background-color: #B3DADE;
-      box-shadow: 0 2px 4px darkslategray;
-      min-width: 140px;
-      border: none;
-      padding: .33rem 0.33rem 0rem 0.33rem;
-      font-size: 18px;
-      transition: .3s;
-      position: relative;
-      cursor: pointer;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bold;
-      color: #043C3F;
-      display: inline-block;
-      overflow: hidden;
-      z-index: 1;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      color: #000000;
+    background-color: #B3DADE;
+    box-shadow: 0 2px 4px darkslategray;
+    min-width: 140px;
+    border: none;
+    padding: 0.25rem 0.4rem;
+    font-size: 16px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
 
-      &:after {
+    &:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -149,7 +148,7 @@ a.button {
         background-color: #B3DADE;
         z-index: -2;
     }
-  
+
     &:before {
         content: '';
         position: absolute;
@@ -160,19 +159,19 @@ a.button {
         background-color: #043C3F;
         transition: all .3s;
         z-index: -1;
-        color: #FFD1D1;
     }
 
-      &:hover {
+    &:hover {
         color: #FFD1D1;
-            &:before {
-                width: 100%;
-            }
-      
-            &:active {
-                box-shadow: 0px 100px 0 0 #01B1D3 inset;
-            }
+
+        &:before {
+            width: 100%;
         }
+
+        &:active {
+            box-shadow: 0px 100px 0 0 #01B1D3 inset;
+        }
+    }
 }
 
 .activePage {
