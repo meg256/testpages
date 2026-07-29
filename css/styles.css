@@ -123,7 +123,7 @@ a.button {
       min-width: 140px;
       border: none;
       padding: .33rem 0.33rem 0rem 0.33rem;
-      font-size: 20px;
+      font-size: 18px;
       transition: .3s;
       position: relative;
       cursor: pointer;
@@ -137,7 +137,7 @@ a.button {
       justify-content: center;
       text-align: center;
       text-decoration: none;
-      color: #D81B1B;
+      color: #000000;
 
       &:after {
         content: '';
