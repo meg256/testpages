@@ -181,15 +181,25 @@ a.button {
       color: #033C3F; 
 }
 
-.rounded-box {
+.rounded-box-coe {
       border: 2px solid #F0F4F5;
       border-radius: 50px;
       background-color: #F0F4F5;
       padding: 1px;
-      width: 100%;
 }
 
-.figure {
+.rounded-box-edu {
+      border: 2px solid #BED9DC;
+      border-radius: 15px; 
+      background-color: #F0F4F5; 
+      max-width: 1500px; 
+      padding-left: 30px; 
+      padding-right: 30px; 
+      padding-top: 5px; 
+      padding-bottom: 15px;
+}
+
+figure {
       text-align: center; 
       max-width: 100%;
       height: auto;
